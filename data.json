@@ -1,0 +1,184 @@
+{
+	"sites": [
+		{
+			"name": "JAVJunkies",
+			"url": "http://www.javjunkies.com",
+			"description": "每日更新，幾乎是日本片",
+			"site_types": 4,
+			"language": [3],
+			"downloadable": 1,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 3,
+				"description": "按日期分類，提供簡易tag"
+			},
+			"mobile_ux_rating": 2,
+			"tags": ["BT", "日本"]
+		},
+		{
+			"name":"520夫妻論壇",
+			"url": "http://www.520cc.me",
+			"description": "自拍論壇，有積分限制",
+			"site_type": 2,
+			"language": [1],
+			"downloadable": 0,
+			"adblock": 0,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 2,
+				"description": "僅有論壇版面分類"
+			},
+			"mobile_ux_rating": 1,
+			"tags": ["線上看", "自拍", "偷拍"]
+		},
+		{
+			"name":"素人系総合 wiki",
+			"url": "http://sougouwiki.com",
+			"description": "查詢所有番號女優出過的片",
+			"site_type": 3,
+			"language": [4],
+			"downloadable": 0,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 4,
+				"description": "按女優分類"
+			},
+			"mobile_ux_rating": 2,
+			"tags": ["wiki", "女優", "番號"]
+		},
+		{
+			"name":"Xonline.TV",
+			"url": "http://xonline.tv",
+			"description": "看片速度快，分類詳細",
+			"site_type": 1,
+			"language": [3],
+			"downloadable": 0,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 5,
+				"description": "有片商、地區及口味等分類"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看", "日本"]
+		},
+		{
+			"name":"Jadult.Net",
+			"url": "http://jamo.tv",
+			"description": "看片速度快，分類詳細",
+			"site_type": 1,
+			"language": [3],
+			"downloadable": 0,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 5,
+				"description": "有片商、女優及口味等分類"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看", "日本", "自拍"]
+		},
+		{
+			"name":"PORN.COM",
+			"url": "http://www.porn.com",
+			"description": "歐美居多，分類清楚",
+			"site_type": 1,
+			"language": [3,4],
+			"downloadable": 1,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 5,
+				"description": "一如歐美網站的詳盡分類"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看","歐美","自拍","可下載"]
+		},
+		{
+			"name":"SEXIX",
+			"url": "http://sexix.net",
+			"description": "歐美居多，不囉唆就是看片，分類較不詳細",
+			"site_type": 1,
+			"language": [3],
+			"downloadable": 0,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 4,
+				"description": "只有概略分類，找片要靠tag或搜尋"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看","歐美","自拍"]
+		},
+		{
+			"name":"GetRelax",
+			"url": "http://getrelax.club",
+			"description": "全中文，廣告稍多建議使用ADBlock",
+			"site_type": 1,
+			"language": [1],
+			"downloadable": 1,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 5,
+				"description": "按類型分類，搜尋功能強大"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看","日本","自拍","可下載"]
+		},
+		{
+			"name":"jav247.net",
+			"url": "http://jav247.net",
+			"description": "HD片源速度快",
+			"site_type": 1,
+			"language": [3],
+			"downloadable": 0,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 3,
+				"description": "有分類跟沒分類差不多"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看","HD","日本"]
+		},
+		{
+			"name":"JAVHDX",
+			"url": "http://javhdx.tv",
+			"description": "幾乎都是無碼片，HD片源多速度快",
+			"site_type": 1,
+			"language": [3],
+			"downloadable": 1,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 4,
+				"description": "大概只有片商分類能用，反正都是無碼片這樣就夠了"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["線上看","日本","無碼"]
+		},
+		{
+			"name":"JAVBUS",
+			"url": "http://www.javbus.com",
+			"description": "BT下載，分類齊全",
+			"site_type": 4,
+			"language": [1,3,4],
+			"downloadable": 1,
+			"adblock": 1,
+			"searchable": 1,
+			"sort": {
+				"sort_rating": 5,
+				"description": "分類詳細，用語很日本"
+			},
+			"mobile_ux_rating": 3,
+			"tags": ["BT","磁力連結"]
+		}
+
+
+
+
+	]
+}

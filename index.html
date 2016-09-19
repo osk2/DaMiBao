@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="damibao">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>大密寶</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-controller="mainCtrl as ctrl">
+	<div class="container">
+		<div class="row">
+			<div ng-repeat="site in ctrl.sites" class="col-md-10 col-md-offset-1">
+				<p ng-bind="site.name"></p>
+			</div>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		angular.module('damibao', [])
+		.controller('mainCtrl', ['$http', function($http) {
+			var self = this;
+			$http.get('data.json').then(function(response) {
+				self.sites = response.data.sites;
+			});
+		}]);
+	</script>
+</body>
+</html>

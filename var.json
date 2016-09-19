@@ -1,0 +1,84 @@
+{
+	"variables": [
+		{
+			"site_types": [
+				{
+					"stid": 1,
+					"description": "線上看影音網站"
+				},
+				{
+					"stid": 2,
+					"description": "論壇"
+				},
+				{
+					"stid": 3,
+					"description": "情報或資訊類網站"
+				},
+				{
+					"stid": 4,
+					"description": "僅提供下載"
+				}
+			]
+		},
+		{
+			"sort_rating": [
+				{
+					"srid": 1,
+					"description": "無分類"
+				},
+				{
+					"srid": 2,
+					"description": "無分類，但提供tag或其他排序方式"
+				},
+				{
+					"srid": 3,
+					"description": "有分類，但簡陋或難以使用"
+				},
+				{
+					"srid": 4,
+					"description": "有分類，僅是堪用程度"
+				},
+				{
+					"srid": 5,
+					"description": "有分類，非常詳細"
+				}
+			]
+		},
+		{
+			"mobile_ux_rating": [
+				{
+					"murid": 1,
+					"description": "僅有電腦版網頁，行動裝置難以操作"
+				},
+				{
+					"murid": 2,
+					"description": "僅有電腦版網頁，行動裝置尚可操作"
+				},
+				{
+					"murid": 3,
+					"description": "支援行動裝置瀏覽"
+				}
+			]
+		},
+		{
+			"languages": [
+				{
+					"lid": 1,
+					"description": "繁體中文"
+				},
+				{
+					"lid": 2,
+					"description": "簡體中文"
+				},
+				{
+					"lid": 3,
+					"description": "英文"
+				},
+				{
+					"lid": 4,
+					"description": "日文",
+				}
+			]
+		}
+	]
+}
