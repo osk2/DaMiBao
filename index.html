@@ -3,15 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>大秘寶</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/theme.min.css"> -->
+	<style>
+		.jumbotron {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
+		.fa-times-circle {
+			color: #e74c3c;
+		}
+
+		.fa-check-circle {
+			color: #1abc9c;
+		}
+	</style>
 </head>
 <body ng-controller="mainCtrl as ctrl">
 	<div class="container">
 		<div class="row">
+			<p>&nbsp;</p>
 			<div ng-repeat="site in ctrl.sites" class="col-md-10 col-md-offset-1">
-				<p ng-bind="site.name"></p>
+				<div class="jumbotron">
+					<div class="container">
+						<div class="row">
+							<a href="{{site.url}}" target="_blank"><h2 ng-bind="site.name"></h2></a>
+							<p ng-bind="site.description"></p>
+							<div class="col-md-6">網站語言︰<span ng-bind="site.language"></span></div>
+							<div class="col-md-6">網站類型︰<span ng-bind="site.site_type"></span></div>
+							<div class="col-md-6">提供下載︰<i class="fa{{site.downloadable}}" aria-hidden="true"></i></div>
+							<div class="col-md-6">可用ADBlock︰<i class="fa{{site.adblock}}" aria-hidden="true"></i></span></div>
+							<div class="col-md-6">提供搜尋︰<span ng-bind="site.searchable"></span></div>
+							<div class="col-md-6">tag︰<span ng-bind="site.tags"></span></div>
+							<div class="col-md-12">
+								<h5 ng-bind="site.sort.description" class="text-muted"></h5>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -22,9 +55,27 @@
 		angular.module('damibao', [])
 		.controller('mainCtrl', ['$http', function($http) {
 			var self = this;
-			$http.get('json/data.json').then(function(response) {
+			$http.get('json/data.json', {cache: false}).then(function(response) {
 				self.sites = response.data.sites;
+				for (var i = 0; i < self.sites.length; i++) {
+					if (self.sites[i].downloadable === 1) {
+						self.sites[i].downloadable = ' fa-check-circle';
+					} else {
+						self.sites[i].downloadable = ' fa-times-circle';
+					}
+
+					if (self.sites[i].adblock === 1) {
+						self.sites[i].adblock = ' fa-check-circle';
+					} else {
+						self.sites[i].adblock = ' fa-times-circle';
+					}
+				}
 			});
+		}])
+		.filter('to_trusted', ['$sce', function($sce){
+			return function(text) {
+				return $sce.trustAsHtml(text);
+			};
 		}]);
 	</script>
 </body>

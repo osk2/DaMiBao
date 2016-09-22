@@ -4,7 +4,7 @@
 			"name": "JAVJunkies",
 			"url": "http://www.javjunkies.com",
 			"description": "每日更新，幾乎是日本片",
-			"site_types": 4,
+			"site_type": 4,
 			"language": [3],
 			"downloadable": 1,
 			"adblock": 1,
