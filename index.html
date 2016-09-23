@@ -91,11 +91,6 @@
 					self.sites[i].sort.rating = self.variables[1].sort_rating[parseInt(self.sites[i].sort.rating) - 1].description;
 				}
 			});
-		}])
-		.filter('to_trusted', ['$sce', function($sce){
-			return function(text) {
-				return $sce.trustAsHtml(text);
-			};
 		}]);
 	</script>
 </body>
