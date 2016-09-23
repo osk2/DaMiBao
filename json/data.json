@@ -10,7 +10,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 3,
+				"rating": 3,
 				"description": "按日期分類，提供簡易tag"
 			},
 			"mobile_ux_rating": 2,
@@ -26,7 +26,7 @@
 			"adblock": 0,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 2,
+				"rating": 2,
 				"description": "僅有論壇版面分類"
 			},
 			"mobile_ux_rating": 1,
@@ -42,7 +42,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 4,
+				"rating": 4,
 				"description": "按女優分類"
 			},
 			"mobile_ux_rating": 2,
@@ -58,7 +58,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 5,
+				"rating": 5,
 				"description": "有片商、地區及口味等分類"
 			},
 			"mobile_ux_rating": 3,
@@ -74,7 +74,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 5,
+				"rating": 5,
 				"description": "有片商、女優及口味等分類"
 			},
 			"mobile_ux_rating": 3,
@@ -90,7 +90,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 5,
+				"rating": 5,
 				"description": "一如歐美網站的詳盡分類"
 			},
 			"mobile_ux_rating": 3,
@@ -106,7 +106,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 4,
+				"rating": 4,
 				"description": "只有概略分類，找片要靠tag或搜尋"
 			},
 			"mobile_ux_rating": 3,
@@ -122,7 +122,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 5,
+				"rating": 5,
 				"description": "按類型分類，搜尋功能強大"
 			},
 			"mobile_ux_rating": 3,
@@ -138,7 +138,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 3,
+				"rating": 3,
 				"description": "有分類跟沒分類差不多"
 			},
 			"mobile_ux_rating": 3,
@@ -154,7 +154,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 4,
+				"rating": 4,
 				"description": "大概只有片商分類能用，反正都是無碼片這樣就夠了"
 			},
 			"mobile_ux_rating": 3,
@@ -170,7 +170,7 @@
 			"adblock": 1,
 			"searchable": 1,
 			"sort": {
-				"sort_rating": 5,
+				"rating": 5,
 				"description": "分類詳細，用語很日本"
 			},
 			"mobile_ux_rating": 3,
