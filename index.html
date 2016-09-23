@@ -37,10 +37,13 @@
 							<div class="col-md-6">網站類型︰<span ng-bind="site.site_type"></span></div>
 							<div class="col-md-6">提供下載︰<i class="fa{{site.downloadable}}" aria-hidden="true"></i></div>
 							<div class="col-md-6">可用ADBlock︰<i class="fa{{site.adblock}}" aria-hidden="true"></i></span></div>
-							<div class="col-md-6">提供搜尋︰<span ng-bind="site.searchable"></span></div>
+							<div class="col-md-6">提供搜尋︰<i class="fa{{site.adblock}}" aria-hidden="true"></i></div>
 							<div class="col-md-6">tag︰<span ng-bind="site.tags"></span></div>
 							<div class="col-md-12">
-								<h5 ng-bind="site.sort.description" class="text-muted"></h5>
+								分類︰
+								<span ng-bind="site.sort.rating"></span>
+								<br>
+								<span ng-bind="site.sort.description" class="text-muted"></span>
 							</div>
 						</div>
 					</div>
@@ -55,6 +58,11 @@
 		angular.module('damibao', [])
 		.controller('mainCtrl', ['$http', function($http) {
 			var self = this;
+
+			$http.get('json/var.json', {cache: false}).then(function(response) {
+				self.variables = response.data.variables;
+			});
+
 			$http.get('json/data.json', {cache: false}).then(function(response) {
 				self.sites = response.data.sites;
 				for (var i = 0; i < self.sites.length; i++) {
@@ -69,6 +77,18 @@
 					} else {
 						self.sites[i].adblock = ' fa-times-circle';
 					}
+
+					if (self.sites[i].searchable === 1) {
+						self.sites[i].searchable = ' fa-check-circle';
+					} else {
+						self.sites[i].searchable = ' fa-times-circle';
+					}
+
+					self.sites[i].site_type = self.variables[0].site_types[parseInt(self.sites[i].site_type) - 1].description;
+
+					self.sites[i].language = self.variables[3].languages[parseInt(self.sites[i].language) - 1].description;
+
+					self.sites[i].sort.rating = self.variables[1].sort_rating[parseInt(self.sites[i].sort.rating) - 1].description;
 				}
 			});
 		}])
