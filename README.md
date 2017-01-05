@@ -3,7 +3,7 @@
 ----------
 原本是要邊寫邊學Angular.js，現在懶得寫了
 
-重點在 [`data/data.json`](data/data.json)
+重點在 [`json/data.json`](json/data.json)
 
 Contributions are welcome
 
